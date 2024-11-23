@@ -1,6 +1,7 @@
 package com.example.demo.models;
 
-import enums.TireStatus;
+import com.example.demo.enums.TireStatus;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -22,13 +23,13 @@ public class Tire {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false, unique = true, length = 255)
+    @Column(nullable = false, length = 255)
     private String tireBrand;
 
     @Column(nullable = false)
     private Float pressure;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private Integer fireNumber;
 
     @Enumerated(EnumType.STRING)

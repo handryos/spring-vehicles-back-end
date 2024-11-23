@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 321321
+      POSTGRES_DB: postgres
+      PGPORT: 4332
+    ports:
+      - "4332:4332"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  demo:
+    build:
+      context: .
+    container_name: demo-app-old
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:4332/postgres
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: 321321
+      spring.jpa.hibernate.ddl-auto: none
+      spring.flyway.enabled: true
+   
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:

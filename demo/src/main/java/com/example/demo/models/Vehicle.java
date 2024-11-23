@@ -2,7 +2,9 @@ package com.example.demo.models;
 
 import java.util.List;
 
-import enums.VehicleStatus;
+import com.example.demo.enums.VehicleStatus;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -37,6 +39,7 @@ public class Vehicle {
     @Column(nullable = false)
     private VehicleStatus status;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "vehicle", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<TirePosition> tire;
 }
