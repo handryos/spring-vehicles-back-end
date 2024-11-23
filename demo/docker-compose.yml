@@ -24,9 +24,9 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:4332/postgres
       SPRING_DATASOURCE_USERNAME: user
       SPRING_DATASOURCE_PASSWORD: 321321
-      spring.jpa.hibernate.ddl-auto: none
-      spring.flyway.enabled: true
-   
+      SPRING_JPA_HIBERNATE_DDL_AUTO: none
+      SPRING_FLYWAY_ENABLED: true
+      SPRING_FLYWAY_BASELINE_ON_MIGRATE: true
     depends_on:
       - postgres
 
