@@ -5,7 +5,6 @@
 ## Dependências
 O projeto utiliza as seguintes dependências principais:
 
-- **Spring Boot**: Para a construção da aplicação.
 - **Flyway**: Para o gerenciamento de migrações de banco de dados.
 - **JPA (Java Persistence API)**: Para persistência de dados no banco de dados.
 - **Spring Data JPA**: Para manipulação dos dados no banco utilizando repositórios.
@@ -15,6 +14,14 @@ O projeto utiliza as seguintes dependências principais:
 
 ## Como rodar
 
+```bash 
+git clone https://github.com/handryos/spring-vehicles-back-end
+``` 
+Dentro da pasta do clone
+```bash 
+cd demo
+``` 
+Já dentro do diretório "demo"
 ```bash 
 mvn clean package
 docker-compose up --build
