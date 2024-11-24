@@ -1,7 +1,8 @@
 # Desafio Técnico | Back-end | Java Pleno
 
 ## Configuração do ambiente
-Para rodar o projeto sem problemas, é necessário ter instalado o Maven e o JDK(Recomendo o 17) e configurar as variáveis de ambiente, como JAVA_HOME E MAVEN_HOME. 
+Para rodar o projeto sem problemas, é necessário ter instalado o Maven e o JDK (Recomendo o 17) e configurar as variáveis de ambiente, como [JAVA_HOME](https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux) e [MAVEN_HOME](https://mkyong.com/maven/how-to-install-maven-in-windows/).
+
 
 ## Dependências
 O projeto utiliza as seguintes dependências principais:
