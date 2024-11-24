@@ -34,12 +34,7 @@ public class VehicleController {
     @ApiResponse(responseCode = "200", description = "Vehicle successfully created")
     @PostMapping("/vehicle")
     public Vehicle createVehicle(@RequestBody Vehicle vehicle) {
-	try {
-	    return vehicleService.create(vehicle);
-	} catch (Exception e) {
-	    throw new InternalException(e.getMessage());
-	}
-
+	return vehicleService.create(vehicle);
     };
 
     @Operation(summary = "Add tire to Vehicle", description = "Recieve an array of tires")
