@@ -58,7 +58,7 @@ Representa um pneu, com as seguintes propriedades:
 - `status`: Status do pneu.
 
 #### TirePosition (Posição do Pneu)
-Representa a posição de um pneu dentro de um veículo. A posição pode ser `front-left`, `front-right`, `rear-left`, `rear-right`, etc.
+Representa a posição de um pneu dentro de um veículo. A posição pode ser `front-left`, `front-right`, `rear-left`, `rear-right`. Decidi deixar dessa forma abrangente pensando em possíveis novas features para abranger mais veículos.
 - `vehicle`: O veículo ao qual o pneu está associado.
 - `tire`: O pneu associado.
 - `position`: A posição do pneu no veículo.
