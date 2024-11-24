@@ -37,7 +37,7 @@ docker-compose up --build
 - **com.example.demo.repository**: Contém os repositórios JPA que são usados para acessar o banco de dados.
 - **com.example.demo.services**: Contém as interfaces dos serviços que definem os contratos de operações.
 - **com.example.demo.implementations**: Contém as implementações dos serviços definidos nas interfaces.
-- **com.example.demo.controller**: (Não fornecido no código atual, mas geralmente conteria controladores REST ou endpoints de API).
+- **com.example.demo.controller**:  Contém as implementações dos controllers para gerenciar as url's.
 
 ### Entidades
 
